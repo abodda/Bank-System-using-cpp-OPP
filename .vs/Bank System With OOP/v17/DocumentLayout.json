@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ABODA\\Downloads\\Bank System With OOP\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{624DBF38-A037-42C0-A15D-FBC8984497A5}|Bank System With OOP\\Bank System With OOP.vcxproj|C:\\Users\\ABODA\\Downloads\\Bank System With OOP\\Bank System With OOP\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{624DBF38-A037-42C0-A15D-FBC8984497A5}|Bank System With OOP\\Bank System With OOP.vcxproj|solutionrelative:Bank System With OOP\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Source.cpp",
+              "DocumentMoniker": "C:\\Users\\ABODA\\Downloads\\Bank System With OOP\\Bank System With OOP\\Source.cpp",
+              "RelativeDocumentMoniker": "Bank System With OOP\\Source.cpp",
+              "ToolTip": "C:\\Users\\ABODA\\Downloads\\Bank System With OOP\\Bank System With OOP\\Source.cpp",
+              "RelativeToolTip": "Bank System With OOP\\Source.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-12T12:56:43.746Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
