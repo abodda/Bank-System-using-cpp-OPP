@@ -1,2 +1,5 @@
 ﻿  Source.cpp
+C:\Users\ABODA\Downloads\Bank System With OOP\Bank System With OOP\string.h(30,30): warning C4267: '=': conversion from 'size_t' to 'short', possible loss of data
+  (compiling source file 'Source.cpp')
+  
   Bank System With OOP.vcxproj -> C:\Users\ABODA\Downloads\Bank System With OOP\x64\Debug\Bank System With OOP.exe
