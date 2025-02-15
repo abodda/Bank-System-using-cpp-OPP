@@ -132,6 +132,7 @@
   <ItemGroup>
     <ClInclude Include="Client.h" />
     <ClInclude Include="clsPerson.h" />
+    <ClInclude Include="Read.h" />
     <ClInclude Include="string.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
