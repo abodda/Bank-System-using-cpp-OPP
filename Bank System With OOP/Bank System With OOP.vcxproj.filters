@@ -32,5 +32,8 @@
     <ClInclude Include="Read.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="TransActions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

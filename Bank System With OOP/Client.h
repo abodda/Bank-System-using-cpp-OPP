@@ -11,6 +11,7 @@
 
 using namespace std;
 class clsClient : public clsPerson {
+private:
 	string _AccountNumber;
 	string _PinCode;
 	string _Balance;
@@ -196,4 +197,42 @@ public:
 		}
 		return clsClient::Find(AccountNumber);
 	}
+	static void DisplayList() {
+			system("cls");
+			vector <string> clients = _SaveFileContentToVector("clients.txt");
+			int clientsize = clients.size();
+			printf("\n\nClient List (%d) Client (s).\n", clientsize);
+			cout << "--------------------------------------------------------------------------------------------------\n";
+			cout << "| " << left << setw(20) << "Account Number" << "| " << setw(10) << "Pin Code" << "| " << setw(25) << "client Name" << "| " << setw(25) << "Phone" << "| " << setw(10) << "Balance" << "\n";
+			cout << "--------------------------------------------------------------------------------------------------\n\n";
+			for (int i = 0; i < clients.size(); i++) {
+				clsClient client = _ConvertLineToClientObject(clients[i]);
+				cout << "| " << left << setw(20) << client.AccountNumber() << "| " << setw(10) << client.PinCode() << "| " << setw(25) << client.Name() << "| " << setw(25) << client.Phone() << "| " << client.Balance() << " $ \n";
+			}
+			cout << "\n--------------------------------------------------------------------------------------------------\n\n";
+	}
+	static void Reset() {
+		fstream file;
+		char ans;
+		cout << "Are you Sure ?? (y,n) ";
+		cin >> ans;
+		if (ans == 'y' || ans == 'Y') {
+			file.open("clients.txt", ios::out);
+			cout << "\nAll clients data has been deleted :')\n";
+		}
+	}
+	static void ShowMoneyList() {
+		vector <string> clients = _SaveFileContentToVector("clients.txt");
+		int clientsize = clients.size();
+		printf("\n\nClient List (%d) Client (s).\n", clientsize);
+		cout << "----------------------------------------------------------------\n";
+		cout << "| " << left << setw(20) << "Account Number" << "| " << setw(25) << "client Name" << "| " << "Balance" << "\n";
+		cout << "----------------------------------------------------------------\n\n";
+		for (int i = 0; i < clients.size(); i++) {
+			clsClient client = _ConvertLineToClientObject(clients[i]);
+			cout << "| " << left << setw(20) << client.AccountNumber() << "| " << setw(25) << client.Name() << "| " << client.Balance() << " $ \n";
+		}
+	}
+	friend class clsTrans;
+	friend void ShowMoneyList();
 };
