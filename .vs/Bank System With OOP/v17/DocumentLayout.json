@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\ABODA\\Downloads\\Bank System With OOP\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{624DBF38-A037-42C0-A15D-FBC8984497A5}|Bank System With OOP\\Bank System With OOP.vcxproj|C:\\Users\\ABODA\\Downloads\\Bank System With OOP\\Bank System With OOP\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{624DBF38-A037-42C0-A15D-FBC8984497A5}|Bank System With OOP\\Bank System With OOP.vcxproj|solutionrelative:Bank System With OOP\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{624DBF38-A037-42C0-A15D-FBC8984497A5}|Bank System With OOP\\Bank System With OOP.vcxproj|C:\\Users\\ABODA\\Downloads\\Bank System With OOP\\Bank System With OOP\\Client.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{624DBF38-A037-42C0-A15D-FBC8984497A5}|Bank System With OOP\\Bank System With OOP.vcxproj|solutionrelative:Bank System With OOP\\Client.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{624DBF38-A037-42C0-A15D-FBC8984497A5}|Bank System With OOP\\Bank System With OOP.vcxproj|C:\\Users\\ABODA\\Downloads\\Bank System With OOP\\Bank System With OOP\\string.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{624DBF38-A037-42C0-A15D-FBC8984497A5}|Bank System With OOP\\Bank System With OOP.vcxproj|solutionrelative:Bank System With OOP\\string.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -11,12 +19,7 @@
       "RelativeMoniker": "D:0:0:{624DBF38-A037-42C0-A15D-FBC8984497A5}|Bank System With OOP\\Bank System With OOP.vcxproj|solutionrelative:Bank System With OOP\\Read.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{624DBF38-A037-42C0-A15D-FBC8984497A5}|Bank System With OOP\\Bank System With OOP.vcxproj|C:\\Users\\ABODA\\Downloads\\Bank System With OOP\\Bank System With OOP\\Client.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{624DBF38-A037-42C0-A15D-FBC8984497A5}|Bank System With OOP\\Bank System With OOP.vcxproj|solutionrelative:Bank System With OOP\\Client.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{624DBF38-A037-42C0-A15D-FBC8984497A5}|Bank System With OOP\\Bank System With OOP.vcxproj|C:\\Users\\ABODA\\Downloads\\Bank System With OOP\\Bank System With OOP\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{624DBF38-A037-42C0-A15D-FBC8984497A5}|Bank System With OOP\\Bank System With OOP.vcxproj|solutionrelative:Bank System With OOP\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\include\\vector||{3B902123-F8A7-4915-9F01-361F908088D0}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{624DBF38-A037-42C0-A15D-FBC8984497A5}|Bank System With OOP\\Bank System With OOP.vcxproj|C:\\Users\\ABODA\\Downloads\\Bank System With OOP\\Bank System With OOP\\clsPerson.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -30,17 +33,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Source.cpp",
               "DocumentMoniker": "C:\\Users\\ABODA\\Downloads\\Bank System With OOP\\Bank System With OOP\\Source.cpp",
               "RelativeDocumentMoniker": "Bank System With OOP\\Source.cpp",
               "ToolTip": "C:\\Users\\ABODA\\Downloads\\Bank System With OOP\\Bank System With OOP\\Source.cpp",
               "RelativeToolTip": "Bank System With OOP\\Source.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAgwC8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-02-13T01:38:37.426Z",
               "IsPinned": true,
@@ -48,13 +51,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Client.h",
               "DocumentMoniker": "C:\\Users\\ABODA\\Downloads\\Bank System With OOP\\Bank System With OOP\\Client.h",
               "RelativeDocumentMoniker": "Bank System With OOP\\Client.h",
               "ToolTip": "C:\\Users\\ABODA\\Downloads\\Bank System With OOP\\Bank System With OOP\\Client.h",
               "RelativeToolTip": "Bank System With OOP\\Client.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAKcAAAAAAAAAAAAAwLIAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-02-13T01:39:01.357Z",
               "IsPinned": true,
@@ -62,20 +65,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
+              "Title": "vector",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\include\\vector",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\include\\vector",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\include\\vector",
+              "RelativeToolTip": "..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\include\\vector",
+              "ViewState": "AgIAAFgHAAAAAAAAAAAnwGAHAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-02-17T12:06:02.76Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "string.h",
               "DocumentMoniker": "C:\\Users\\ABODA\\Downloads\\Bank System With OOP\\Bank System With OOP\\string.h",
               "RelativeDocumentMoniker": "Bank System With OOP\\string.h",
               "ToolTip": "C:\\Users\\ABODA\\Downloads\\Bank System With OOP\\Bank System With OOP\\string.h",
               "RelativeToolTip": "Bank System With OOP\\string.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAqwB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-02-15T08:55:04.863Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "clsPerson.h",
               "DocumentMoniker": "C:\\Users\\ABODA\\Downloads\\Bank System With OOP\\Bank System With OOP\\clsPerson.h",
               "RelativeDocumentMoniker": "Bank System With OOP\\clsPerson.h",
@@ -83,18 +99,17 @@
               "RelativeToolTip": "Bank System With OOP\\clsPerson.h",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAACIAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-02-15T08:02:38.447Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-15T08:02:38.447Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Read.h",
               "DocumentMoniker": "C:\\Users\\ABODA\\Downloads\\Bank System With OOP\\Bank System With OOP\\Read.h",
               "RelativeDocumentMoniker": "Bank System With OOP\\Read.h",
               "ToolTip": "C:\\Users\\ABODA\\Downloads\\Bank System With OOP\\Bank System With OOP\\Read.h",
               "RelativeToolTip": "Bank System With OOP\\Read.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAnwAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-02-15T07:10:22.253Z",
               "EditorCaption": ""

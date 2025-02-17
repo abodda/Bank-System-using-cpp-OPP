@@ -61,13 +61,22 @@ class clsClient : public clsPerson {
 		else cout << "no clients have been added yet! \n";
 		return clients;
 	}
-	static clsClient _ReadClient() {
+	static void _SaveStringToFile(string Line, string name) {
+		fstream file;
+		file.open(name, ios::out | ios::app);
+		if (file.is_open()) {
+			if (Line != "") file << "\n" << Line;
+			file.close();
+		}
+	}
+public:
+	static clsClient ReadClient() {
 		string Name;
 		string Phone;
 		string Email;
 		string PinCode;
 		string Balance;
-		cout << "\nEnter Name : ";
+		cout << "Enter Name : ";
 		getline(cin >> ws, Name);
 		cout << "Enter Phone : ";
 		getline(cin >> ws, Phone);
@@ -80,7 +89,6 @@ class clsClient : public clsPerson {
 		clsClient client(true, Name, Phone, Email, "", PinCode, Balance);
 		return client;
 	}
-public:
 	clsClient(bool Mode, string Name, string Phone, string Email, string AccountNumber, string PinCode, string Balance):
 		clsPerson(Name, Phone, Email)
 	{
@@ -89,8 +97,7 @@ public:
 		_PinCode = PinCode;
 		_Balance = Balance;
 	}
-	static clsClient Find() {
-		string AccountNumber = clsRead::AccountNum();
+	static clsClient Find(string AccountNumber) {
 		fstream file;
 		int pos;
 		vector <clsClient> Clients;
@@ -112,8 +119,7 @@ public:
 			}
 			file.close();
 		}
-		cout << "Client not found :( ...\n\n";
-		return Find();
+		return _EmptyObject();
 	}
 	void Print() {
 		cout << left << setw(15) << "\nAccount Number" << ": " << _AccountNumber;
@@ -130,7 +136,7 @@ public:
 		_PinCode = PinCode;
 	}
 	void SetAccountNumber(string AccountNumber) {
-		_PinCode = AccountNumber;
+		_AccountNumber = AccountNumber;
 	}
 	void SetBalance(string Balance) {
 		_Balance = Balance;
@@ -150,8 +156,8 @@ public:
 	string Balance() {
 		return _Balance;
 	}
-	bool IsCLientExist() {
-		clsClient client = clsClient::Find();
+	static bool IsCLientExist(string AccountNumber) {
+		clsClient client = clsClient::Find(AccountNumber);
 		return (!client.IsEmbty());
 	}
 	void Delete() {
@@ -161,11 +167,33 @@ public:
 		*this = _EmptyObject();
 	}
 	void Update() {
-		clsClient NewClient = _ReadClient();
-		string NewClientLine = _ConvertClientObjectToLine(NewClient);
+		clsClient client = ReadClient();
+		client.SetAccountNumber(_AccountNumber);
+		string NewClientLine = _ConvertClientObjectToLine(client);
 		vector <string> Clients = _SaveFileContentToVector("clients.txt");
 		Clients.at(ClientPos()) = NewClientLine;
 		_SaveVecToFile(Clients, "clients.txt");
-		*this = NewClient;
+		*this = client;
+	}
+	static clsClient Add() {
+		string AccountNumber;
+		while (true) {
+			AccountNumber = clsRead::AccountNum();
+			if (!clsClient::IsCLientExist(AccountNumber)) break;
+			cout << "\nthe account number exist try again... \n\n";
+		}
+		clsClient Client = clsClient::ReadClient();
+		Client.SetAccountNumber(AccountNumber);
+		_SaveStringToFile(_ConvertClientObjectToLine(Client), "clients.txt");
+		return Client;
+	}
+	static clsClient CheckIfItExist() {
+		string AccountNumber;
+		while (true) {
+			AccountNumber = clsRead::AccountNum();
+			if (clsClient::IsCLientExist(AccountNumber)) break;
+			cout << "\nthe account number does not exist try again... \n\n";
+		}
+		return clsClient::Find(AccountNumber);
 	}
 };
