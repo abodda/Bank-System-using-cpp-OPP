@@ -32,9 +32,6 @@ private:
 		vclient.push_back(client.Balance());
 		return clsString::JoinString(vclient, " () ");
 	}
-	static clsClient _EmptyObject() {
-		return clsClient(0, "", "", "", "", "", "");
-	}
 	static void _SaveVecToFile(vector <string> clients, string name) {
 		fstream file;
 		file.open(name, ios::out);
@@ -71,6 +68,10 @@ private:
 		}
 	}
 public:
+
+	static clsClient _EmptyObject() {
+		return clsClient(0, "", "", "", "", "", "");
+	}
 	static clsClient ReadClient() {
 		string Name;
 		string Phone;
@@ -157,10 +158,6 @@ public:
 	string Balance() {
 		return _Balance;
 	}
-	static bool IsCLientExist(string AccountNumber) {
-		clsClient client = clsClient::Find(AccountNumber);
-		return (!client.IsEmbty());
-	}
 	void Delete() {
 		vector <string> Clients = _SaveFileContentToVector("clients.txt");
 		Clients.at(ClientPos()).clear();
@@ -178,29 +175,39 @@ public:
 	}
 	static clsClient Add() {
 		string AccountNumber;
+		clsClient client = clsClient::_EmptyObject();
 		while (true) {
 			AccountNumber = clsRead::AccountNum();
-			if (!clsClient::IsCLientExist(AccountNumber)) break;
+			clsClient client = clsClient::Find(AccountNumber);
+			if (client.IsEmbty()) break;
 			cout << "\nthe account number exist try again... \n\n";
 		}
-		clsClient Client = clsClient::ReadClient();
-		Client.SetAccountNumber(AccountNumber);
-		_SaveStringToFile(_ConvertClientObjectToLine(Client), "clients.txt");
-		return Client;
+		clsClient NewClient = clsClient::ReadClient();
+		NewClient.SetAccountNumber(AccountNumber);
+		_SaveStringToFile(_ConvertClientObjectToLine(NewClient), "clients.txt");
+		return NewClient;
 	}
 	static clsClient CheckIfItExist() {
 		string AccountNumber;
+		clsClient client = clsClient::_EmptyObject();
 		while (true) {
 			AccountNumber = clsRead::AccountNum();
-			if (clsClient::IsCLientExist(AccountNumber)) break;
+			client = clsClient::Find(AccountNumber);
+			if (!client.IsEmbty()) break;
 			cout << "\nthe account number does not exist try again... \n\n";
 		}
-		return clsClient::Find(AccountNumber);
+		return client;
 	}
 	static void DisplayList() {
 			system("cls");
 			vector <string> clients = _SaveFileContentToVector("clients.txt");
 			int clientsize = clients.size();
+			if (clientsize == 0) {
+				cout << left << setw(18) << "-------------------------------\n";
+				cout << left << setw(18) << "|   there are no Clients !    |";
+				cout << left << setw(18) << "\n-------------------------------\n";
+				return;
+			}
 			printf("\n\nClient List (%d) Client (s).\n", clientsize);
 			cout << "--------------------------------------------------------------------------------------------------\n";
 			cout << "| " << left << setw(20) << "Account Number" << "| " << setw(10) << "Pin Code" << "| " << setw(25) << "client Name" << "| " << setw(25) << "Phone" << "| " << setw(10) << "Balance" << "\n";
@@ -234,5 +241,6 @@ public:
 		}
 	}
 	friend class clsTrans;
+	friend class clsUser;
 	friend void ShowMoneyList();
 };

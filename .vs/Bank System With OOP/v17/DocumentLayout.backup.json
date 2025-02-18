@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\ABODA\\Downloads\\Bank System With OOP\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{624DBF38-A037-42C0-A15D-FBC8984497A5}|Bank System With OOP\\Bank System With OOP.vcxproj|C:\\Users\\ABODA\\Downloads\\Bank System With OOP\\Bank System With OOP\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{624DBF38-A037-42C0-A15D-FBC8984497A5}|Bank System With OOP\\Bank System With OOP.vcxproj|solutionrelative:Bank System With OOP\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{624DBF38-A037-42C0-A15D-FBC8984497A5}|Bank System With OOP\\Bank System With OOP.vcxproj|C:\\Users\\ABODA\\Downloads\\Bank System With OOP\\Bank System With OOP\\Client.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{624DBF38-A037-42C0-A15D-FBC8984497A5}|Bank System With OOP\\Bank System With OOP.vcxproj|solutionrelative:Bank System With OOP\\Client.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -11,24 +15,20 @@
       "RelativeMoniker": "D:0:0:{624DBF38-A037-42C0-A15D-FBC8984497A5}|Bank System With OOP\\Bank System With OOP.vcxproj|solutionrelative:Bank System With OOP\\User.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{624DBF38-A037-42C0-A15D-FBC8984497A5}|Bank System With OOP\\Bank System With OOP.vcxproj|C:\\Users\\ABODA\\Downloads\\Bank System With OOP\\Bank System With OOP\\clsPerson.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{624DBF38-A037-42C0-A15D-FBC8984497A5}|Bank System With OOP\\Bank System With OOP.vcxproj|solutionrelative:Bank System With OOP\\clsPerson.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{624DBF38-A037-42C0-A15D-FBC8984497A5}|Bank System With OOP\\Bank System With OOP.vcxproj|C:\\Users\\ABODA\\Downloads\\Bank System With OOP\\Bank System With OOP\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{624DBF38-A037-42C0-A15D-FBC8984497A5}|Bank System With OOP\\Bank System With OOP.vcxproj|solutionrelative:Bank System With OOP\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{624DBF38-A037-42C0-A15D-FBC8984497A5}|Bank System With OOP\\Bank System With OOP.vcxproj|C:\\Users\\ABODA\\Downloads\\Bank System With OOP\\Bank System With OOP\\TransActions.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{624DBF38-A037-42C0-A15D-FBC8984497A5}|Bank System With OOP\\Bank System With OOP.vcxproj|solutionrelative:Bank System With OOP\\TransActions.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{624DBF38-A037-42C0-A15D-FBC8984497A5}|Bank System With OOP\\Bank System With OOP.vcxproj|C:\\Users\\ABODA\\Downloads\\Bank System With OOP\\Bank System With OOP\\Read.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{624DBF38-A037-42C0-A15D-FBC8984497A5}|Bank System With OOP\\Bank System With OOP.vcxproj|solutionrelative:Bank System With OOP\\Read.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{624DBF38-A037-42C0-A15D-FBC8984497A5}|Bank System With OOP\\Bank System With OOP.vcxproj|C:\\Users\\ABODA\\Downloads\\Bank System With OOP\\Bank System With OOP\\string.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{624DBF38-A037-42C0-A15D-FBC8984497A5}|Bank System With OOP\\Bank System With OOP.vcxproj|solutionrelative:Bank System With OOP\\string.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{624DBF38-A037-42C0-A15D-FBC8984497A5}|Bank System With OOP\\Bank System With OOP.vcxproj|C:\\Users\\ABODA\\Downloads\\Bank System With OOP\\Bank System With OOP\\Read.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{624DBF38-A037-42C0-A15D-FBC8984497A5}|Bank System With OOP\\Bank System With OOP.vcxproj|solutionrelative:Bank System With OOP\\Read.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{624DBF38-A037-42C0-A15D-FBC8984497A5}|Bank System With OOP\\Bank System With OOP.vcxproj|C:\\Users\\ABODA\\Downloads\\Bank System With OOP\\Bank System With OOP\\clsPerson.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{624DBF38-A037-42C0-A15D-FBC8984497A5}|Bank System With OOP\\Bank System With OOP.vcxproj|solutionrelative:Bank System With OOP\\clsPerson.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{624DBF38-A037-42C0-A15D-FBC8984497A5}|Bank System With OOP\\Bank System With OOP.vcxproj|C:\\Users\\ABODA\\Downloads\\Bank System With OOP\\Bank System With OOP\\TransActions.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{624DBF38-A037-42C0-A15D-FBC8984497A5}|Bank System With OOP\\Bank System With OOP.vcxproj|solutionrelative:Bank System With OOP\\TransActions.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,17 +38,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Source.cpp",
               "DocumentMoniker": "C:\\Users\\ABODA\\Downloads\\Bank System With OOP\\Bank System With OOP\\Source.cpp",
               "RelativeDocumentMoniker": "Bank System With OOP\\Source.cpp",
               "ToolTip": "C:\\Users\\ABODA\\Downloads\\Bank System With OOP\\Bank System With OOP\\Source.cpp",
               "RelativeToolTip": "Bank System With OOP\\Source.cpp",
-              "ViewState": "AgIAALUAAAAAAAAAAAAcwMkAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAIAAAAAAAAAAAAAMwDMBAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-02-13T01:38:37.426Z",
               "IsPinned": true,
@@ -56,34 +56,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Client.h",
               "DocumentMoniker": "C:\\Users\\ABODA\\Downloads\\Bank System With OOP\\Bank System With OOP\\Client.h",
               "RelativeDocumentMoniker": "Bank System With OOP\\Client.h",
               "ToolTip": "C:\\Users\\ABODA\\Downloads\\Bank System With OOP\\Bank System With OOP\\Client.h",
               "RelativeToolTip": "Bank System With OOP\\Client.h",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAwAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAcwEYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-02-13T01:39:01.357Z",
-              "IsPinned": true,
+              "WhenOpened": "2025-02-18T21:33:34.713Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "User.h",
               "DocumentMoniker": "C:\\Users\\ABODA\\Downloads\\Bank System With OOP\\Bank System With OOP\\User.h",
               "RelativeDocumentMoniker": "Bank System With OOP\\User.h",
               "ToolTip": "C:\\Users\\ABODA\\Downloads\\Bank System With OOP\\Bank System With OOP\\User.h",
               "RelativeToolTip": "Bank System With OOP\\User.h",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAMwJ0AAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-02-18T13:14:49.169Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "TransActions.h",
               "DocumentMoniker": "C:\\Users\\ABODA\\Downloads\\Bank System With OOP\\Bank System With OOP\\TransActions.h",
               "RelativeDocumentMoniker": "Bank System With OOP\\TransActions.h",
@@ -91,25 +90,24 @@
               "RelativeToolTip": "Bank System With OOP\\TransActions.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-02-17T13:57:11.544Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T13:57:11.544Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "string.h",
               "DocumentMoniker": "C:\\Users\\ABODA\\Downloads\\Bank System With OOP\\Bank System With OOP\\string.h",
               "RelativeDocumentMoniker": "Bank System With OOP\\string.h",
               "ToolTip": "C:\\Users\\ABODA\\Downloads\\Bank System With OOP\\Bank System With OOP\\string.h",
               "RelativeToolTip": "Bank System With OOP\\string.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAvwB0AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-02-15T08:55:04.863Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "clsPerson.h",
               "DocumentMoniker": "C:\\Users\\ABODA\\Downloads\\Bank System With OOP\\Bank System With OOP\\clsPerson.h",
               "RelativeDocumentMoniker": "Bank System With OOP\\clsPerson.h",
@@ -117,18 +115,17 @@
               "RelativeToolTip": "Bank System With OOP\\clsPerson.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-02-15T08:02:38.447Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-15T08:02:38.447Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "Read.h",
               "DocumentMoniker": "C:\\Users\\ABODA\\Downloads\\Bank System With OOP\\Bank System With OOP\\Read.h",
               "RelativeDocumentMoniker": "Bank System With OOP\\Read.h",
               "ToolTip": "C:\\Users\\ABODA\\Downloads\\Bank System With OOP\\Bank System With OOP\\Read.h",
               "RelativeToolTip": "Bank System With OOP\\Read.h",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-02-15T07:10:22.253Z",
               "EditorCaption": ""

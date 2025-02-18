@@ -21,14 +21,39 @@ class clsRead {
 		Quit = 10
 	};
 	enum _enTrans { Deposit = 1, WithDrow = 2, ShowMoneyList = 3, MainMenu = 4 };
-
+	enum _enReadUserChoice {
+		UserList = 1,
+		Adduser = 2,
+		deleteuser = 3,
+		updateuser = 4,
+		finduser = 5,
+		MainMenue = 6
+	};
 public:
+	static _enReadUserChoice ReadChoiceFromManageUserScreen() {
+		short choice;
+		cout << "\n (1 : 6) : ";
+		cin >> choice;
 
+		while (cin.fail() || choice > 6 || choice < 1) {
+			cin.clear();
+			cin.ignore(std::numeric_limits< std::streamsize> ::max(), '\n');
+			cout << "\npls enter a valid choice (1 : 6) only \n";
+			cin >> choice;
+		}
+		return _enReadUserChoice(choice);
+	}
     static string AccountNum() {
         string AccountName;
         cout << "\nEnter account number you want to : ";
         cin >> AccountName;
         return AccountName;
+    }
+    static string UserName() {
+        string UserName;
+        cout << "\nEnter User Name you want to : ";
+        cin >> UserName;
+        return UserName;
     }
 	static _enMainChoice ReadMainChoiceFromUser() {
 		short choice;
@@ -57,5 +82,6 @@ public:
 	}
 	friend void MainProgram();
 	friend void Trans();
+	friend void ManageUser();
 
 };

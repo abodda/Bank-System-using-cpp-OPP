@@ -1,9 +1,12 @@
 #include <iostream>
 #include "client.h"
 #include "Read.h"
+#include "User.h"
 #include "TransActions.h"
 using namespace std; 
 void Trans();
+void ManageUser();
+void ManageUserScreen();
 void Deposit() {
 	system("cls");
 	cout << "------------------------------\n";
@@ -86,7 +89,7 @@ void FindClient() {
 void DeleteClient() {
 	system("cls");
 	cout << "------------------------------\n";
-	cout << "	Delete User screen\n";
+	cout << "	Delete Client screen\n";
 	cout << "------------------------------\n";
 	clsClient FoundClient = clsClient::CheckIfItExist();
 	FoundClient.Print();
@@ -102,7 +105,7 @@ void DeleteClient() {
 void UpdateClient() {
 	system("cls");
 	cout << "------------------------------\n";
-	cout << "	Update User screen\n";
+	cout << "	Update Client screen\n";
 	cout << "------------------------------\n\n";
 	clsClient client = clsClient::CheckIfItExist();
 	client.Print();
@@ -115,7 +118,7 @@ void UpdateClient() {
 void AddClient() {
 	system("cls");
 	cout << "------------------------------\n";
-	cout << "	Add User screen\n";
+	cout << "	Add Client screen\n";
 	cout << "------------------------------\n";
 	clsClient client = clsClient::Add();
 	cout << "\nClient Added Successfully :')\n";
@@ -133,6 +136,11 @@ void ResetClients() {
 void ShowMoneyList() {
 	system("cls");
 	clsClient::ShowMoneyList();
+}
+void BackToManageScreen() {
+	cout << "\n\npress any key to go to Manage User menu...";
+	system("pause>0");
+	ManageUser();
 }
 void Trans() {
 	system("cls");
@@ -199,14 +207,91 @@ void MainProgram(){
 			Trans();
 			break;
 		case clsRead::_enMainChoice::MangeUsers:
-		
+			ManageUser();
 			GoBackToMainMenue();
 			break;
 		case clsRead::_enMainChoice::Quit:
 			exit(0);
 	}
 }
+void AddUser() {
+	system("cls");
+	cout << "------------------------------\n";
+	cout << "	Add User screen\n";
+	cout << "------------------------------\n\n";
+	clsUser::Add();
+	cout << "\nAdded Successfully :') ...";
+
+}
+void UpdateUser() {
+	system("cls");
+	cout << "------------------------------\n";
+	cout << "	Update User screen\n";
+	cout << "------------------------------\n\n";
+	clsUser user = clsUser::CheckUser();
+	user.Print();
+	char ans;
+	cout << "\nAre you sure you want to Update ??? (y,n) : ";
+	cin >> ans;
+	if (ans == 'y' || ans == 'Y'){
+	user.Update();
+	cout << "\nUpdated Successfully :') ...";
+	}
+
+}
+void FindUser() {
+	system("cls");
+	cout << "------------------------------\n";
+	cout << "	Find Client screen\n";
+	cout << "------------------------------\n\n";
+	clsUser user = clsUser::CheckUser();
+	user.Print();
+}
+void DeleteUser() {
+	system("cls");
+	cout << "------------------------------\n";
+	cout << "	Delete User screen\n";
+	cout << "------------------------------\n\n";
+	clsUser user = clsUser::CheckUser();
+	user.Print();
+	char ans;
+	cout << "\nAre you sure you want to delete ??? (y,n) : ";
+	cin >> ans;
+	if (ans == 'y' || ans == 'Y')
+	{
+		user.Delete();
+		cout << "\nClient Deleted successfully :')\n";
+	}
+}
 void ManageUser() {
+	ManageUserScreen();
+	switch (clsRead::ReadChoiceFromManageUserScreen()) {
+	case clsRead::_enReadUserChoice::Adduser:
+		AddUser();
+		BackToManageScreen();
+		break;
+	case clsRead::_enReadUserChoice::finduser:
+		FindUser();
+		BackToManageScreen();
+		break;
+	case clsRead::_enReadUserChoice::deleteuser:
+		DeleteUser();
+		BackToManageScreen();
+		break;
+	case clsRead::_enReadUserChoice::updateuser:
+		UpdateUser();
+		BackToManageScreen();
+		break;
+	case clsRead::_enReadUserChoice::MainMenue:
+		MainProgram();
+		break;
+	case clsRead::_enReadUserChoice::UserList:
+		clsUser::DisplayUsersList();
+		BackToManageScreen();
+		break;
+	}
+}
+void ManageUserScreen() {
 	system("cls");
 	cout << "********************************************\n";
 	cout << "	Manage Users screen\n";
