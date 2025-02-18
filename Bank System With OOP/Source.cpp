@@ -206,6 +206,19 @@ void MainProgram(){
 			exit(0);
 	}
 }
+void ManageUser() {
+	system("cls");
+	cout << "********************************************\n";
+	cout << "	Manage Users screen\n";
+	cout << "********************************************\n\n";
+	cout << "(1) ==> Users List\n";
+	cout << "(2) ==> Add new User\n";
+	cout << "(3) ==> delete User\n";
+	cout << "(4) ==> update User\n";
+	cout << "(5) ==> find User\n";
+	cout << "(6) ==> Main Menue\n";
+	cout << "------------------------------";
+}
 int main() {
 	MainProgram();
 }
