@@ -12,12 +12,22 @@
 using namespace std;
 class clsUser : public clsPerson {
 private:
-	string _Permesion;
+	enum enPermesion {
+		ClientList = 1,
+		AddClient = 2,
+		DeleteClient = 4,
+		UpdateClient = 8,
+		FindClient = 16,
+		resetClients = 32,
+		TransActions = 64,
+		ManageUsers = 128,
+	};
+	int _Permesion;
 	string _Password;
 	int _pos = 0;
 	static clsUser _ConvertLineToUserObject(string line) {
 		vector <string> data = clsString::Split(line, " () ");
-		clsUser User(data[0], data[1], data[2], data[3], data[4]);
+		clsUser User(data[0], data[1], data[2], data[3], stoi(data[4]));
 		return User;
 	}
 	static string _ConvertUserToLine(clsUser User) {
@@ -26,14 +36,14 @@ private:
 		user.push_back(User.Phone());
 		user.push_back(User.Email());
 		user.push_back(User.password());
-		user.push_back(User.permesion());
+		user.push_back(to_string(User.permesion()));
 		return clsString::FromVector(user);
 	}
 	static clsUser _EmptyObject() {
-		return clsUser("", "", "", "", "");
+		return clsUser("", "", "", "", -2);
 	}
 public:
-	clsUser(string Name, string Phone, string Email, string password, string permesion) : 
+	clsUser(string Name, string Phone, string Email, string password, int permesion) : 
 		clsPerson(Name, Phone, Email) {
 		_Permesion = permesion;
 		_Password = password;
@@ -96,13 +106,13 @@ public:
 	void SetPass(string password) {
 		_Password = password;
 	}
-	void Setper(string permesion) {
+	void Setper(int permesion) {
 		_Permesion = permesion;
 	}
 	string password() {
 		return _Password;
 	}
-	string permesion() {
+	int permesion() {
 		return _Permesion;
 	}
 	void SetUserPos(int pos) {
@@ -116,15 +126,43 @@ public:
 		string Phone;
 		string Email;
 		string Password;
-		string permesion;
+		int permesion = 0;
 		cout << "Enter Phone : ";
 		getline(cin >> ws, Phone);
 		cout << "Enter Email : ";
 		getline(cin >> ws, Email);
 		cout << "Enter Password : ";
 		getline(cin >> ws, Password);
-		cout << "Enter permesion : ";
-		getline(cin >> ws, permesion);
+		char Ans;
+		cout << "\nAre you want to make him an Admin ? : ";
+		cin >> Ans;
+		if (Ans == 'y' || Ans == 'Y') permesion = -1;
+		else {
+			cout << "\nAccess to Client List ? : ";
+			cin >> Ans;
+			if (Ans == 'y' || Ans == 'Y')  permesion += enPermesion::ClientList;
+			cout << "\nAccess to Add New Client ? : ";
+			cin >> Ans;
+			if (Ans == 'y' || Ans == 'Y')  permesion += enPermesion::AddClient;
+			cout << "\nAccess to Delete Client ? : ";
+			cin >> Ans;
+			if (Ans == 'y' || Ans == 'Y')  permesion += enPermesion::DeleteClient;
+			cout << "\nAccess to Update Client ? : ";
+			cin >> Ans;
+			if (Ans == 'y' || Ans == 'Y')  permesion += enPermesion::UpdateClient;
+			cout << "\nAccess to Find Client ? : ";
+			cin >> Ans;
+			if (Ans == 'y' || Ans == 'Y')  permesion += enPermesion::FindClient;
+			cout << "\nAccess to Reset Clients ? : ";
+			cin >> Ans;
+			if (Ans == 'y' || Ans == 'Y')  permesion += enPermesion::resetClients;
+			cout << "\nAccess to TransActions Clients ? : ";
+			cin >> Ans;
+			if (Ans == 'y' || Ans == 'Y')  permesion += enPermesion::TransActions;
+			cout << "\nAccess to ManageUsers ? : ";
+			cin >> Ans;
+			if (Ans == 'y' || Ans == 'Y')  permesion += enPermesion::ManageUsers;
+		}
 		return clsUser(Name, Phone, Email, Password, permesion);
 	}
 	void Print() {

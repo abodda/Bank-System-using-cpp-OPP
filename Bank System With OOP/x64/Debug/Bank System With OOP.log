@@ -11,7 +11,7 @@ C:\Users\ABODA\Downloads\Bank System With OOP\Bank System With OOP\client.h(204,
 C:\Users\ABODA\Downloads\Bank System With OOP\Bank System With OOP\client.h(233,18): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   (compiling source file 'Source.cpp')
   
-C:\Users\ABODA\Downloads\Bank System With OOP\Bank System With OOP\User.h(44,11): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\ABODA\Downloads\Bank System With OOP\Bank System With OOP\User.h(54,11): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   (compiling source file 'Source.cpp')
   
 C:\Users\ABODA\Downloads\Bank System With OOP\Bank System With OOP\TransActions.h(32,10): warning C4244: 'return': conversion from '__int64' to 'int', possible loss of data

@@ -253,6 +253,10 @@ void DeleteUser() {
 	cout << "	Delete User screen\n";
 	cout << "------------------------------\n\n";
 	clsUser user = clsUser::CheckUser();
+	if (user.Name() == "Admin") {
+		cout << "\nyou cant delete Amin sorry :(\n";
+		return;
+	}
 	user.Print();
 	char ans;
 	cout << "\nAre you sure you want to delete ??? (y,n) : ";
