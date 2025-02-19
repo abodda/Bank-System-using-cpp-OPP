@@ -4,6 +4,8 @@
 #include "User.h"
 #include "TransActions.h"
 using namespace std; 
+clsUser NowUser("", "", "", "", 0); 
+void Process();
 void Trans();
 void ManageUser();
 void ManageUserScreen();
@@ -172,42 +174,58 @@ void Trans() {
 			break;
 	}
 }
+void NotAvailible() {
+	system("cls");
+	cout << "|  you can not access this :( |\n";
+	cout << "|   pls Contact your Admin    |\n";
+}
 void MainProgram(){
 	DisplayMainScreen();
 	switch (clsRead::ReadMainChoiceFromUser()) {
-	case clsRead::_enMainChoice::ShowClientLIst:
-			DisplayClientList();
+		case clsRead::_enMainChoice::ShowClientLIst:
+			if (NowUser.IsAllowed(clsUser::enPermesion::ClientList)) DisplayClientList();
+			else NotAvailible();
 			GoBackToMainMenue();
 			break;
 		case clsRead::_enMainChoice::adddNewClient:
-			AddClient();
+			if (NowUser.IsAllowed(clsUser::enPermesion::AddClient)) AddClient();
+			else NotAvailible();
 			GoBackToMainMenue();
 			break;
 		case clsRead::_enMainChoice::resetClients:
-			ResetClients();
+			if (NowUser.IsAllowed(clsUser::enPermesion::resetClients)) ResetClients();
+			else NotAvailible();
 			GoBackToMainMenue();
 			break;
 		case clsRead::_enMainChoice::deleteClient:
-				DeleteClient();
-				GoBackToMainMenue();
-
-			break;
-		case clsRead::_enMainChoice::updateClient:
-				UpdateClient();
-				GoBackToMainMenue();
-				break;
-		case clsRead::_enMainChoice::findClient:
-				FindClient();
-				GoBackToMainMenue();
-				break;
-		case clsRead::_enMainChoice::LogOut:
+			if (NowUser.IsAllowed(clsUser::enPermesion::DeleteClient)) DeleteClient();
+			else NotAvailible();
 			GoBackToMainMenue();
 			break;
+		case clsRead::_enMainChoice::updateClient:
+			if (NowUser.IsAllowed(clsUser::enPermesion::UpdateClient)) UpdateClient();
+			else NotAvailible();
+			GoBackToMainMenue();
+				break;
+		case clsRead::_enMainChoice::findClient:
+			if (NowUser.IsAllowed(clsUser::enPermesion::FindClient)) FindClient();
+			else NotAvailible();
+			GoBackToMainMenue();
+				break;
+		case clsRead::_enMainChoice::LogOut:
+			Process();
+			break;
 		case clsRead::_enMainChoice::TransActions:
-			Trans();
+			if (NowUser.IsAllowed(clsUser::enPermesion::TransActions)) Trans();
+			else 
+			{
+				NotAvailible();
+				GoBackToMainMenue();
+			}
 			break;
 		case clsRead::_enMainChoice::MangeUsers:
-			ManageUser();
+			if (NowUser.IsAllowed(clsUser::enPermesion::ManageUsers)) ManageUser();
+			else NotAvailible();
 			GoBackToMainMenue();
 			break;
 		case clsRead::_enMainChoice::Quit:
@@ -308,6 +326,12 @@ void ManageUserScreen() {
 	cout << "(6) ==> Main Menue\n";
 	cout << "------------------------------";
 }
+void Process() {
+	while (1) {
+		NowUser.LogIN();
+		MainProgram();
+	}
+}
 int main() {
-	MainProgram();
+	Process();
 }

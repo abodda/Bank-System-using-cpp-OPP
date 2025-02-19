@@ -7,8 +7,6 @@
 #include "clsPerson.h"
 #include "string.h"
 #include "Read.h"
-
-
 using namespace std;
 class clsUser : public clsPerson {
 private:
@@ -202,4 +200,29 @@ public:
 		*this = user;
 		clsClient::_SaveVecToFile(users, "users.txt");
 	}
+	clsUser LogIN() {
+		system("cls");
+		string username;
+		string password;
+		cout << "------------------------------\n";
+		cout << "	Log in screen\n";
+		cout << "------------------------------\n";
+		
+		while(1){
+			cout << "\nenter username : ";
+			getline(cin >> ws, username);
+			SetName(username);
+			cout << "enter Password : ";
+			cin >> password;
+			*this = Find(Name());
+			if (!this->IsEmbty() && this->password() == password) break;
+			cout << "Invalid User Name / Password";
+		}
+		return *this;
+	}
+	bool IsAllowed(int NumberOfWanted) {
+		if (_Permesion == -1) return 1;
+		return ((NumberOfWanted & _Permesion) == NumberOfWanted);
+	}
+	friend void MainProgram();
 };

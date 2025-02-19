@@ -1,9 +1,4 @@
 #pragma once
-#include <iostream>
-#include <vector>
-#include <string>
-#include "clsPerson.h"
-#include "Client.h"
 
 using namespace std;
 
